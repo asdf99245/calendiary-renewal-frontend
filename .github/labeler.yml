@@ -1,10 +1,17 @@
+# labeler "full" schema
+
 # enable labeler on issues, prs, or both.
 enable:
-  issues: false
+  issues: true
   prs: true
 # comments object allows you to specify a different message for issues and prs
 
 comments:
+  issues: |
+    Thanks for opening this issue!
+    I have applied any labels matching special text in your title and description.
+
+    Please review the labels and make any necessary changes.
   prs: |
     Thanks for the contribution!
     I have applied any labels matching special text in your title and description.
@@ -19,27 +26,16 @@ comments:
 #    - 'include' patterns will associate a label if any of these patterns match
 #    - 'exclude' patterns will ignore this label if any of these patterns match
 labels:
-  "bug":
+  'bug':
     include:
-      - '\bbug\b'
-  "feature":
+      - '\bbug[s]?\b'
+    exclude: []
+  'help wanted':
     include:
-      - '\bfeature\b'
-  "documentation":
+      - '\bhelp( me)?\b'
+    exclude:
+      - '\b\[test(ing)?\]\b'
+  'enhancement':
     include:
-      - '\bdocs\b'
-  "chore":
-    include:
-      - '\bchore\b'
-  "design":
-    include:
-      - '\bdesign\b'
-  "test":
-    include:
-      - '\btest\b'
-  "refactor":
-    include:
-      - '\brefactor\b'
-  "ci/cd":
-    include:
-      - '\b(ci)*(cd)*\b':
+      - '\bfeat\b'
+    exclude: []
