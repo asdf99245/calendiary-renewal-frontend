@@ -26,22 +26,21 @@ labels:
       - '\bbug\b'
   ':star2: feature':
     include:
-      - '\bfeature\b'
-#   ':bug: bug':
-#     include:
-#       - '\bbug\b'
-#   ':star2: feature':
-#     include:
-#       - '\bfeature\b'
-#   ':broom: chore':
-#     include:
-#       - '\bchore\b'
-#   ':framed_picture: design':
-#     include:
-#       - '\bdesign\b'
-#   ':test_tube: test':
-#     include:
-#       - '\btest\b'
-#   ':toolbox: refactor':
-#     include:
-#       - '\brefactor\b'
+      - '\bfeature\b:'
+  #   ':blue_book: documentation':
+  #     include:
+  #       - '\bdocs\b:'
+  ':broom: chore':
+    include:
+      - '\bchore\b:'
+  ':framed_picture: design':
+    include:
+      - '\bdesign\b:'
+  ':test_tube: test':
+    include:
+      - '\btest\b:'
+  ':toolbox: refactor':
+    include:
+      - '\brefactor\b:'
+  ':package: ci/cd':
+    include: ['\bci\/cd\b:', '\bci\b:', '\bcd\b:']
