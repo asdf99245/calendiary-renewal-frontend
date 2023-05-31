@@ -27,9 +27,6 @@ labels:
   ':star2: feature':
     include:
       - '\bfeature\b:'
-#   ':blue_book: documentation':
-#     include:
-#       - '\bdocs\b:'
   ':broom: chore':
     include:
       - '\bchore\b:'
@@ -42,5 +39,3 @@ labels:
   ':toolbox: refactor':
     include:
       - '\brefactor\b:'
-  ':package: ci/cd':
-    include: ['\bci\/cd\b:', '\bci\b:', '\bcd\b:']
