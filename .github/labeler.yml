@@ -23,7 +23,7 @@ comments:
 labels:
   ':bug: bug':
     include:
-      - '\bbug\b:'
+      - 'bug:'
   ':star2: feature':
     include:
       - '\bfeature\b:'
