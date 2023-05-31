@@ -27,15 +27,21 @@ labels:
   ':star2: feature':
     include:
       - '\bfeature\b'
-  ':broom: chore':
-    include:
-      - '\bchore\b'
-  ':framed_picture: design':
-    include:
-      - '\bdesign\b'
-  ':test_tube: test':
-    include:
-      - '\btest\b'
-  ':toolbox: refactor':
-    include:
-      - '\brefactor\b'
+#   ':bug: bug':
+#     include:
+#       - '\bbug\b'
+#   ':star2: feature':
+#     include:
+#       - '\bfeature\b'
+#   ':broom: chore':
+#     include:
+#       - '\bchore\b'
+#   ':framed_picture: design':
+#     include:
+#       - '\bdesign\b'
+#   ':test_tube: test':
+#     include:
+#       - '\btest\b'
+#   ':toolbox: refactor':
+#     include:
+#       - '\brefactor\b'
