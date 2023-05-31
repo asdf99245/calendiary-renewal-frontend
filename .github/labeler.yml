@@ -23,22 +23,25 @@ comments:
 labels:
   ':bug: bug':
     include:
-      - '\bbug\b'
+      - '\bbug:\b'
   ':star2: feature':
     include:
-      - '\bfeature\b'
+      - '\bfeature:\b'
   ':blue_book: documentation':
     include:
-      - '\bdocs\b'
+      - '\bdocs:\b'
   ':broom: chore':
     include:
-      - '\bchore\b'
+      - '\bchore:\b'
   ':framed_picture: design':
     include:
-      - '\bdesign\b'
+      - '\bdesign:\b'
   ':test_tube: test':
     include:
-      - '\btest\b'
+      - '\btest:\b'
   ':toolbox: refactor':
     include:
-      - '\brefactor\b'
+      - '\brefactor:\b'
+  ':package: ci/cd':
+    include:
+      - '\b(ci)*(cd)*:\b':
