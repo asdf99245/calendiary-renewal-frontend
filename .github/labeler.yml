@@ -42,6 +42,4 @@ labels:
   ':toolbox: refactor':
     include:
       - '\brefactor:\b'
-  ':package: ci/cd':
-    include:
-      - '\b(ci)*(cd)*:\b':
+      
