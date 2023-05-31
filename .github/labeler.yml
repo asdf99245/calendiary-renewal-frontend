@@ -26,16 +26,16 @@ labels:
       - '\bbug\b'
   ':star2: feature':
     include:
-      - '\bfeature\b:'
+      - '\bfeature\b'
   ':broom: chore':
     include:
-      - '\bchore\b:'
+      - '\bchore\b'
   ':framed_picture: design':
     include:
-      - '\bdesign\b:'
+      - '\bdesign\b'
   ':test_tube: test':
     include:
-      - '\btest\b:'
+      - '\btest\b'
   ':toolbox: refactor':
     include:
-      - '\brefactor\b:'
+      - '\brefactor\b'
