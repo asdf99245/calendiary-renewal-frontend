@@ -19,27 +19,27 @@ comments:
 #    - 'include' patterns will associate a label if any of these patterns match
 #    - 'exclude' patterns will ignore this label if any of these patterns match
 labels:
-  ":bug: bug":
+  "bug":
     include:
       - '\bbug\b'
-  ":star2: feature":
+  "feature":
     include:
       - '\bfeature\b'
-  ":blue_book: documentation":
+  "documentation":
     include:
       - '\bdocs\b'
-  ":broom: chore":
+  "chore":
     include:
       - '\bchore\b'
-  ":framed_picture: design":
+  "design":
     include:
       - '\bdesign\b'
-  ":test_tube: test":
+  "test":
     include:
       - '\btest\b'
-  ":toolbox: refactor":
+  "refactor":
     include:
       - '\brefactor\b'
-  ":package: ci/cd":
+  "ci/cd":
     include:
       - '\b(ci)*(cd)*\b':
