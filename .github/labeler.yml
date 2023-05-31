@@ -27,9 +27,9 @@ labels:
   ':star2: feature':
     include:
       - '\bfeature\b:'
-  #   ':blue_book: documentation':
-  #     include:
-  #       - '\bdocs\b:'
+  ':blue_book: documentation':
+    include:
+      - '\bdocs\b:'
   ':broom: chore':
     include:
       - '\bchore\b:'
