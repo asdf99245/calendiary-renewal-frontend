@@ -1,0 +1,3 @@
+{
+  "src/**/*.{ts,tsx}": ["yarn lint:fix --cache", "yarn test --findRelatedTests --pathWithNoTests"]
+}
