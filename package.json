@@ -12,7 +12,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "coverage": "jest --coverage",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "cz"
   },
   "dependencies": {
     "next": "13.4.4",
@@ -28,6 +29,8 @@
     "@types/react-dom": "18.2.4",
     "@typescript-eslint/eslint-plugin": "^5.59.8",
     "autoprefixer": "10.4.14",
+    "commitizen": "^4.3.0",
+    "cz-customizable": "^7.0.0",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
     "eslint-config-prettier": "^8.8.0",
@@ -40,5 +43,10 @@
     "prettier-plugin-tailwindcss": "^0.3.0",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    }
   }
 }
