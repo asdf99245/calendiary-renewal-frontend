@@ -9,13 +9,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        primary_gradient: 'linear-gradient(to bottom, #9969BF, #BF69B9)',
       },
       colors: {
         primary: 'rgb(var(--color-primary) / <alpha-value>)',
         primary_variant: 'rgb(var(--color-primary-variant) / <alpha-value>)',
-        primary_gradient: 'linear-gradient(to bottom, #9969BF, #BF69B9)',
         secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
         secondary_variant: 'rgb(var(--color-secondary-variant) / <alpha-value>)',
         error: 'rgb(var(--color-error) / <alpha-value>)',
