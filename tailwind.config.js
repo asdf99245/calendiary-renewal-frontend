@@ -8,6 +8,88 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      fontSize: {
+        heading1: [
+          '2.375rem',
+          {
+            fontWeight: '700',
+            lineHeight: '3.063rem',
+            letterSpacing: '-0.02em',
+          },
+        ],
+        heading2: [
+          '2.125rem',
+          {
+            fontWeight: '700',
+            lineHeight: '2.75rem',
+            letterSpacing: '-0.02em',
+          },
+        ],
+        heading3: [
+          '1.875rem',
+          {
+            fontWeight: '700',
+            lineHeight: '2.438rem',
+            letterSpacing: '-0.02em',
+          },
+        ],
+        heading4: [
+          '1.625rem',
+          {
+            fontWeight: '700',
+            lineHeight: '2.125rem',
+            letterSpacing: '-0.02em',
+          },
+        ],
+        heading5: [
+          '1.375rem',
+          {
+            fontWeight: '700',
+            lineHeight: '1.813rem',
+            letterSpacing: '-0.02em',
+          },
+        ],
+        heading6: [
+          '1.125rem',
+          {
+            fontWeight: '700',
+            lineHeight: '1.688rem',
+            letterSpacing: '-0.02em',
+          },
+        ],
+        body1: [
+          '1rem',
+          {
+            fontWeight: '700',
+            lineHeight: '1.5rem',
+            letterSpacing: '0',
+          },
+        ],
+        body2: [
+          '0.875rem',
+          {
+            fontWeight: '700',
+            lineHeight: '1.313rem',
+            letterSpacing: '0',
+          },
+        ],
+        caption: [
+          '0.75rem',
+          {
+            fontWeight: '700',
+            lineHeight: '1.125rem',
+            letterSpacing: '0',
+          },
+        ],
+        button: [
+          '1rem',
+          {
+            fontWeight: '700',
+            lineHeight: '1rem',
+            letterSpacing: '0',
+          },
+        ],
+      },
       backgroundImage: {
         primary_gradient: 'linear-gradient(to bottom, #9969BF, #BF69B9)',
       },
