@@ -12,7 +12,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "coverage": "jest --coverage",
-    "prepare": "husky install",
+    "prepare": "chmod ug+x .husky/* && husky install",
     "commit": "cz"
   },
   "dependencies": {
