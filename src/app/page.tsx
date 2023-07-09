@@ -1,3 +1,4 @@
+import Sample from '@/components/Sample';
 import { Typography } from '@/components/typography';
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         Sample Text
       </Typography>
       <Typography variant={'heading1'}>Sample Text</Typography>
+      <Sample />
     </main>
   );
 }
