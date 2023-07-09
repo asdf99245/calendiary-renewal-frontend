@@ -1,4 +1,4 @@
-import { Typography } from '@/components/Typography';
+import { Typography } from '@/components/typography';
 
 export default function Home() {
   return (
@@ -6,6 +6,10 @@ export default function Home() {
       calendiary
       <Typography variant='caption'>typography</Typography>
       <Typography className='text-yellow-500'>Sample Text</Typography>
+      <Typography as='a' href='alink'>
+        Sample Text
+      </Typography>
+      <Typography variant={'heading1'}>Sample Text</Typography>
     </main>
   );
 }

@@ -1,5 +1,5 @@
-import { ComponentPropsWithoutRef, ElementType, ReactHTML, createElement } from 'react';
-import { ReactNode } from 'react';
+import type { ComponentPropsWithoutRef, ElementType, ReactNode } from 'react';
+import { createElement } from 'react';
 import { type VariantProps, cva } from 'class-variance-authority';
 import { cn } from '@/utils/cn';
 
@@ -34,7 +34,12 @@ type TypographyProps<T extends ElementType> = {
 
 type Props<T extends ElementType> = TypographyProps<T> & TypographyVariantProps;
 
-export function Typography<T extends ElementType>({ as, children, variant, ...props }: Props<T>) {
+export function Typography<T extends ElementType = 'p'>({
+  as,
+  children,
+  variant,
+  ...props
+}: Props<T> & Omit<ComponentPropsWithoutRef<T>, keyof Props<T>>) {
   const Element = as || (variant && ELEMENT_MAPPING[variant]) || 'p';
 
   const dynamicProps = {
