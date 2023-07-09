@@ -1,4 +1,4 @@
-import { ParamHTMLAttributes } from 'react';
+import { ComponentPropsWithoutRef, ElementType, ReactHTML, createElement } from 'react';
 import { ReactNode } from 'react';
 import { type VariantProps, cva } from 'class-variance-authority';
 import { cn } from '@/utils/cn';
@@ -23,16 +23,37 @@ const TypographyVariants = cva('antialiased', {
   },
 });
 
+type TypographyVariant = NonNullable<TypographyVariantProps['variant']>;
+
 type TypographyVariantProps = VariantProps<typeof TypographyVariants>;
 
-interface Props extends ParamHTMLAttributes<HTMLParagraphElement>, TypographyVariantProps {
+type TypographyProps<T extends ElementType> = {
+  as?: T;
   children: ReactNode;
+};
+
+type Props<T extends ElementType> = TypographyProps<T> & TypographyVariantProps;
+
+export function Typography<T extends ElementType>({ as, children, variant, ...props }: Props<T>) {
+  const Element = as || (variant && ELEMENT_MAPPING[variant]) || 'p';
+
+  const dynamicProps = {
+    className: cn(TypographyVariants({ variant })),
+    ...props,
+  };
+
+  return createElement(Element, dynamicProps, children);
 }
 
-export function Typography({ children, variant, className, ...props }: Props) {
-  return (
-    <p className={cn(TypographyVariants({ variant }), className)} {...props}>
-      {children}
-    </p>
-  );
-}
+const ELEMENT_MAPPING: Record<TypographyVariant, ElementType> = {
+  heading1: 'h1',
+  heading2: 'h2',
+  heading3: 'h3',
+  heading4: 'h4',
+  heading5: 'h5',
+  heading6: 'h6',
+  body1: 'p',
+  body2: 'p',
+  caption: 'p',
+  button: 'span',
+} as const;
