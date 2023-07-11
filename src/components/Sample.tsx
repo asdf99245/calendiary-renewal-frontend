@@ -1,3 +1,7 @@
 export default function Sample() {
-  return <span>This Is Sample</span>;
+  return (
+    <span>
+      <span>This Is Sample</span>
+    </span>
+  );
 }
